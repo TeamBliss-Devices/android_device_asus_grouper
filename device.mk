@@ -20,6 +20,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_COPY_FILES := \
     device/asus/grouper/fstab.grouper:root/fstab.grouper \
     device/asus/grouper/init.grouper.rc:root/init.grouper.rc
+    $(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/grouper/device-common.mk)
@@ -33,6 +34,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/grouper/overlay
 
-# BootAnimation
-PRODUCT_COPY_FILES += \ 
-	$(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+	
