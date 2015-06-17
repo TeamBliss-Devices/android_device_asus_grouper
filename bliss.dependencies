@@ -3,6 +3,6 @@
       "remote": "cm",
       "repository": "android_kernel_asus_grouper",
       "target_path": "kernel/asus/grouper",
-      "revision": "cm12.1"
+      "revision": "cm-12.1"
     }
 ]
