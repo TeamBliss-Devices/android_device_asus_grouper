@@ -41,3 +41,27 @@ include device/asus/grouper/BoardConfigCommon.mk
 TARGET_RECOVERY_FSTAB = device/asus/grouper/fstab.grouper
 
 MALLOC_IMPL := dlmalloc
+
+# Blissiful building options
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_GRAPHITE := true
+BLISS_STRICT := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+FLOOP_NEST_OPTIMIZE := true
+ENABLE_GCCONLY := true
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+FAST_MATH := true
+ENABLE_MODULAR_O3 := true
+ENABLE_LTO := true
+Link_Time_Optimizations := true
+TARGET_USE_ION_COMPAT := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_TC_ROM := 4.8-linaro
+TARGET_TC_KERNEL := 4.8-linaro
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+-include vendor/bliss/config/sm.mk
