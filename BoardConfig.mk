@@ -42,6 +42,9 @@ TARGET_RECOVERY_FSTAB = device/asus/grouper/fstab.grouper
 
 MALLOC_IMPL := dlmalloc
 
+# Block_Build
+Bliss_Build_Block := 1
+
 # Blissiful building options
 BLISSIFY := true
 BLISS_O3 := true
