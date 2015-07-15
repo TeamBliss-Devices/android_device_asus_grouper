@@ -53,6 +53,8 @@ BLISS_KRAIT := false
 BLISS_PIPE := true
 TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+WITH_LZMA_OTA := true
+TARGET_ENABLE_UKM := true
 
 #SaberMod
 -include vendor/bliss/config/sm.mk
