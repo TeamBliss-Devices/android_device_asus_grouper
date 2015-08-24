@@ -43,8 +43,8 @@ TARGET_RECOVERY_FSTAB = device/asus/grouper/fstab.grouper
 MALLOC_IMPL := dlmalloc
 
 # BlissPop Configs
-TARGET_TC_ROM := 4.8-linaro
-TARGET_TC_KERNEL := 4.8-linaro
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.9-linaro
 BLISSIFY := true
 BLISS_O3 := true
 BLISS_STRICT := false
